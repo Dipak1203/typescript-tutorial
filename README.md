@@ -71,3 +71,15 @@ In tsconfig.json file have enable this content
 
 Then create directory name `src` in that create app.ts file
 
+
+# Our first program on typescript
+
+let's write code on `app.ts file(src/app.ts)`
+
+```
+    let name:string = "Hello World"
+    console.log(string)
+```
+
+save the file and go to the terminal hit the `tsc .`
+
