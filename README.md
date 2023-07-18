@@ -1,4 +1,4 @@
-![alt text](./img.png)
+![alt text](./images/img.png)
 
 # Hello Guys ! In this tutorial I'm going to explain typescript
 
@@ -55,8 +55,8 @@ In tsconfig.json file have enable this content
     "target":"es6",
     "module": "commonjs",
     "rootDir":".src/app.ts"
-    "outDir": "./dist/",   
-    "strict": true,        
+    "outDir": "./dist/",
+    "strict": true,
     "sourceMap":true,
     "noEmitOnError":true,
     "removeComments": true,
@@ -71,7 +71,6 @@ In tsconfig.json file have enable this content
 
 Then create directory name `src` in that create app.ts file
 
-
 # Our first program on typescript
 
 let's write code on `app.ts file(src/app.ts)`
@@ -81,5 +80,44 @@ let's write code on `app.ts file(src/app.ts)`
     console.log(string)
 ```
 
-save the file and go to the terminal hit the `tsc .`
+save the file and go to the terminal hit the `tsc` command to compiler the .ts file to .js file
+and run the app `node dist/app.js` then you'll see output
 
+![alt text](./images/congrate.jpg)
+
+# congratulations buddie `now you are typescript programmer 😄`
+
+# Next. What is type annotations in typescript ?
+
+Type annotations in TypeScript are used to explicitly specify the types of variables, function parameters, return values, and other elements in your code.
+
+**for example**
+
+![alt text](./images/annotation.png)
+
+
+if we try to write other it throw the error
+**because we must keep add value or change value according to the that variable annotations**
+```
+// Number type annotation
+let age: number = 20;
+age = "dipak"
+
+// String type annotation
+let personName: string = "Dipak";
+personName = [2,4]
+
+// Boolean type annotation
+let isStudent: boolean = true;
+isStudent = "true"
+// Array type annotation
+let myFavNum: number[] = [12, 2, 5,6];
+
+myFavNum = "hello"
+
+// Object type annotation
+let person: { name: string; age: number } = {
+  name: "Ram",
+  age: 25,
+};
+```
