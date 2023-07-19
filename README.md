@@ -235,3 +235,49 @@ let strLength: number = (<string>someValue).length;
 let strOrNum: string | number = <string | number>someValue;
 
 ```
+
+
+## Literal Type in typescript ?
+
+
+In TypeScript, literal types allow you to specify exact values that a variable or parameter can hold. Literal types are a subset of TypeScript's type system that define specific, concrete values for variables, function parameters, and object properties. Using literal types can make your code more expressive and help catch bugs early by restricting the allowed values to a specific set.
+
+1. String Literal Types:
+A string literal type represents a specific string value. It is denoted by enclosing the string value in single or double quotes.
+```
+let color: "red" = "red";
+// color = "blue"; // Error, as 'color' can only be "red"
+
+```
+2.Numeric Literal Types:
+A numeric literal type represents a specific numeric value. It is denoted by writing the numeric value directly.
+
+```
+let statusCode: 200 = 200;
+// statusCode = 404; // Error, as 'statusCode' can only be 200
+```
+
+
+3. Enum Member Literal Types:
+Enum member literal types allow you to use specific values from an enum as literal types.
+```
+enum Direction {
+  Up = "UP",
+  Down = "DOWN",
+  Left = "LEFT",
+  Right = "RIGHT",
+}
+
+function move(direction: Direction) {
+  // Function logic here
+}
+
+move(Direction.Up);   // Valid
+move(Direction.Down); // Valid
+// move("LEFT");       // Error, as the argument must be of type Direction enum
+
+```
+
+
+There are several types of literal. You can explore in to the internet
+

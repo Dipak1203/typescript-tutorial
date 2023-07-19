@@ -62,3 +62,21 @@
 
 // // Type assertion with union type: Treat 'someValue' as a number or a string
 // let strOrNum: string | number = <string | number>someValue;
+
+
+
+// enum Direction {
+//     Up = "UP",
+//     Down = "DOWN",
+//     Left = "LEFT",
+//     Right = "RIGHT",
+//   }
+  
+//   function move(direction: Direction) {
+//     // Function logic here
+//   }
+  
+//   move(Direction.Up);   // Valid
+//   move(Direction.Down); // Valid
+//   move("LEFT");       // Error, as the argument must be of type Direction enum
+  
