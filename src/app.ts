@@ -48,3 +48,8 @@
 // //   printID(true);  // Error, as 'id' should be a number or a string
 
 
+type A = { foo: number };
+type B = { bar: string };
+
+// Intersection type: a variable must satisfy both type A and type B
+let combined: A & B = { foo: 42, bar: "hello" };

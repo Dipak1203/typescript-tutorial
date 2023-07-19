@@ -195,3 +195,12 @@ printID("ABC123"); // Valid
 // printID(true);  // Error, as 'id' should be a number or a string
 
 ```
+
+
+### Intersection type in Typescript
+In addition to the | symbol, you can use & to create intersection types where a variable must satisfy multiple type conditions.
+type A = { foo: number };
+type B = { bar: string };
+
+// Intersection type: a variable must satisfy both type A and type B
+let combined: A & B = { foo: 42, bar: "hello" };
