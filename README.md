@@ -341,3 +341,25 @@ let employee: [number, string][];
 employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
 ```
 
+
+
+
+## Function in typescript 
+
+Functions are the basic building block of any application, whether they’re local functions, imported from another module, or methods on a class. They’re also values, and just like other values, TypeScript has many ways to describe how functions can be called. Let’s learn about how to write types that describe functions.
+
+**Function Type Expressions**
+The simplest way to describe a function is with a function type expression. These types are syntactically similar to arrow functions:
+
+
+```
+function name(fn: (a: string) => void) {
+  fn("Namaste, Ram");
+}
+ 
+function printName(s: string) {
+  console.log(s);
+}
+ 
+greeter(printName);
+```

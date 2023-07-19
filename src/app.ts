@@ -116,3 +116,15 @@
 // employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
 
 // console.log(employee)
+
+
+
+function Name(fn: (a: string) => void) {
+    fn("Namaste, Ram");
+  }
+   
+  function printName(s: string) {
+    console.log(s);
+  }
+   
+  Name(printName);
