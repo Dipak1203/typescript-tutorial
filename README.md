@@ -122,6 +122,16 @@ let person: { name: string; age: number } = {
 };
 ```
 
+## #Type Inference
+Type inference works by analyzing how variables are initialized and used throughout the code, and based on that analysis, it assigns appropriate types to those variables. This helps reduce the need for explicit type annotations, making the code more concise and readable while still providing static type checking.
+
+```
+let message = "Hello, TypeScript"; // The compiler infers the type of 'message' as 'string'
+let count = 42;                    // The compiler infers the type of 'count' as 'number'
+let isValid = true;                // The compiler infers the type of 'isValid' as 'boolean'
+
+```
+
 
 
 # Primitive data types in Typescript ?
@@ -156,3 +166,5 @@ let person: Array<string | number> = ['DIPAK',20,'NEPAL','PROGRAMMER',50];
 
 console.log(`My name is ${person[0]} and my age is ${person[1]} and I'm from ${person[2]}. I'm a ${person[3]}, I have a more than ${person[4]} projects`)
 ```
+
+
