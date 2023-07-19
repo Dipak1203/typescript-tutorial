@@ -204,3 +204,34 @@ type B = { bar: string };
 
 // Intersection type: a variable must satisfy both type A and type B
 let combined: A & B = { foo: 42, bar: "hello" };
+
+
+## Type Assertion(Type cast)
+Type assertions, also known as type casts, are a way to tell the TypeScript compiler that you know more about the type of a value than it does. It allows you to explicitly specify the type of a variable or expression, overriding the compiler's type inference. Type assertions are written using either the as keyword or the angle bracket syntax (<>).
+
+Type assertions are useful in situations where you have more information about the type of a value than TypeScript can infer, or when you want to work with a value as a specific type temporarily. It's important to note that type assertions do not perform any runtime checks or conversions. They only affect how the TypeScript compiler treats the types during static type checking.
+
+**Using the as keyword:**
+```
+let someValue: any = "this is a string";
+
+// Type assertion: Treat 'someValue' as a string
+let strLength: number = (someValue as string).length;
+
+// Type assertion with union type: Treat 'someValue' as a number or a string
+let strOrNum: string | number = someValue as string | number;
+
+```
+
+Using the **angle<>** bracket syntax:
+
+```
+let someValue: any = "this is a string";
+
+// Type assertion: Treat 'someValue' as a string
+let strLength: number = (<string>someValue).length;
+
+// Type assertion with union type: Treat 'someValue' as a number or a string
+let strOrNum: string | number = <string | number>someValue;
+
+```

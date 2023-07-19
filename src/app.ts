@@ -48,8 +48,17 @@
 // //   printID(true);  // Error, as 'id' should be a number or a string
 
 
-type A = { foo: number };
-type B = { bar: string };
+// type A = { foo: number };
+// type B = { bar: string };
 
-// Intersection type: a variable must satisfy both type A and type B
-let combined: A & B = { foo: 42, bar: "hello" };
+// // Intersection type: a variable must satisfy both type A and type B
+// let combined: A & B = { foo: 42, bar: "hello" };
+
+
+// let someValue: any = "this is a string";
+
+// // Type assertion: Treat 'someValue' as a string
+// let strLength: number = (<string>someValue).length;
+
+// // Type assertion with union type: Treat 'someValue' as a number or a string
+// let strOrNum: string | number = <string | number>someValue;
