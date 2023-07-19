@@ -130,3 +130,29 @@ More you understand below images
 
 ![alt text](./images/datatypes.jpg)
 
+
+
+
+# Now we'll understand about an Array with typescript. 
+
+An array is a special type of data type which can store multiple values of different data types sequentially using a special syntax.
+
+TypeScript supports arrays, similar to JavaScript. There are two ways to declare an array:
+
+1. Using square brackets. This method is similar to how you would declare arrays in JavaScript.
+```
+let friends: string[] = ['Ram', 'Sita', 'Hanuman'];
+```
+
+2. Using a generic array type, Array<elementType>.
+
+let Friends: Array<string> =['Ram', 'Sita', 'Hanuman'];
+
+```
+// Multi type array
+
+let person: Array<string | number> = ['DIPAK',20,'NEPAL','PROGRAMMER',50];
+
+
+console.log(`My name is ${person[0]} and my age is ${person[1]} and I'm from ${person[2]}. I'm a ${person[3]}, I have a more than ${person[4]} projects`)
+```
