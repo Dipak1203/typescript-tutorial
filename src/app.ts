@@ -119,12 +119,25 @@
 
 
 
-function Name(fn: (a: string) => void) {
-    fn("Namaste, Ram");
-  }
+// function Name(fn: (a: string) => void) {
+//     fn("Namaste, Ram");
+//   }
    
-  function printName(s: string) {
-    console.log(s);
-  }
+//   function printName(s: string) {
+//     console.log(s);
+//   }
    
-  Name(printName);
+//   Name(printName);
+
+
+// type Point = {
+//   x: number;
+//   y: number;
+// };
+
+// function printCoordinates(point: Point): void {
+//   console.log(`x: ${point.x}, y: ${point.y}`);
+// }
+
+// const myPoint: Point = { x: 10, y: 20 };
+// printCoordinates(myPoint); // Output: x: 10, y: 20

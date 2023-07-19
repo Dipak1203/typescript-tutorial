@@ -363,3 +363,53 @@ function printName(s: string) {
  
 greeter(printName);
 ```
+
+
+
+## Type Aliases in typescript 
+
+
+In TypeScript, type aliases allow you to create custom names for any type. This is especially useful when you have complex or repetitive types that you want to refer to by a simpler, more descriptive name. Type aliases do not introduce new types; they merely create a new name for an existing type.
+
+To define a type alias, you use the type keyword followed by the alias name and the corresponding type. Here's the general syntax:
+
+**type AliasName = TypeDefinition;**
+
+```
+// Basic Type aliases
+type ID = number;
+
+const userId: ID = 123;
+
+```
+
+**Union Type aliases**
+```
+type Status = "pending" | "approved" | "rejected";
+
+function processStatus(status: Status): void {
+  // implementation
+}
+
+processStatus("pending"); // Valid
+processStatus("approved"); // Valid
+processStatus("invalid"); // Error - Type '"invalid"' is not assignable to type 'Status'.
+
+```
+
+**Object Type aliases**
+
+```
+type Point = {
+  x: number;
+  y: number;
+};
+
+function printCoordinates(point: Point): void {
+  console.log(`x: ${point.x}, y: ${point.y}`);
+}
+
+const myPoint: Point = { x: 10, y: 20 };
+printCoordinates(myPoint); // Output: x: 10, y: 20
+
+```
