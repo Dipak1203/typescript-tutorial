@@ -80,3 +80,32 @@
 //   move(Direction.Down); // Valid
 //   move("LEFT");       // Error, as the argument must be of type Direction enum
   
+
+// interface Person {
+//     name: string;
+//     age: number;
+//     email: string;
+//   }
+  
+//   const person: Person = {
+//     name: "ram",
+//     age: 30,
+//     email: "ram@example.com",
+//   };
+
+//   console.log(person.name)
+
+
+// type Car = {
+//     make: string;
+//     model: string;
+//     year: number;
+//   };
+  
+//   const car: Car = {
+//     make: "Toyota",
+//     model: "Corolla",
+//     year: 2020,
+//   };
+
+//   console.log(car.make)

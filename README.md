@@ -281,3 +281,44 @@ move(Direction.Down); // Valid
 
 There are several types of literal. You can explore in to the internet
 
+
+
+## Object (most used) in typescript 
+In TypeScript, an object is a data type that represents a collection of key-value pairs, where each key is a string (or symbol) and each value can be of any data type. Objects are fundamental in JavaScript and are used to store and manipulate data in a structured manner.
+
+In TypeScript, you can define an object's shape using an interface or a type alias. Here's how you can create and work with objects in TypeScript:
+
+1. Declaring an object with a specific shape using interfaces:
+```
+interface Person {
+  name: string;
+  age: number;
+  email: string;
+}
+
+const person: Person = {
+  name: "ram",
+  age: 30,
+  email: "ram@example.com",
+};
+
+```
+
+2.Declaring an object with a specific shape using type aliases:
+```
+type Car = {
+  make: string;
+  model: string;
+  year: number;
+};
+
+const car: Car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2020,
+};
+
+```
+
+
+
