@@ -322,3 +322,22 @@ const car: Car = {
 
 
 
+## Typescript Tuples
+
+TypeScript introduced a new data type called Tuple. Tuple can contain two values of different data types.
+
+for Example
+```
+let employee: [number, string] = [1, "Ram"];
+let person: [number, string, boolean] = [1, "Ram", true];
+
+let user: [number, string, boolean, number, string];// declare tuple variable
+user = [1, "Ram", true, 20, "Admin"];// initialize tuple variable
+```
+
+**Tuple in array
+```
+let employee: [number, string][];
+employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
+```
+

@@ -1,4 +1,5 @@
 "use strict";
-let person = ['DIPAK', 20, 'NEPAL', 'PROGRAMMER', 50];
-console.log(`My name is ${person[0]} and my age is ${person[1]} and I'm from ${person[2]}. I'm a ${person[3]}, I have a more than ${person[4]} projects`);
+let employee;
+employee = [[1, "Steve"], [2, "Bill"], [3, "Jeff"]];
+console.log(employee);
 //# sourceMappingURL=app.js.map
