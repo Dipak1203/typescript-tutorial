@@ -30,3 +30,21 @@
 // let isValid = true; 
 
 // message = 10;
+
+
+// let ageOrName: number | string;
+
+// ageOrName = 25;     // Valid, as 'ageOrName' can hold a number
+// ageOrName = "RAM"; // Valid, as 'ageOrName' can hold a string
+// ageOrName = true; // Type 'boolean' is not assignable to type 'string | number'
+
+
+// function printID(id: number | string) {
+//     console.log(`ID: ${id}`);
+//   }
+  
+// printID(42);       // Valid
+//   printID("ABC123"); // Valid
+// //   printID(true);  // Error, as 'id' should be a number or a string
+
+

@@ -168,3 +168,30 @@ console.log(`My name is ${person[0]} and my age is ${person[1]} and I'm from ${p
 ```
 
 
+
+## Union Type in typescript
+
+Union types in TypeScript allow you to specify that a variable or parameter can hold values of different types. This is useful when you want a variable to be able to accept multiple types while still benefiting from TypeScript's static type checking.
+
+```
+// Union type: a variable that can hold values of type 'number' or 'string'
+let ageOrName: number | string;
+
+ageOrName = 25;     // Valid, as 'ageOrName' can hold a number
+ageOrName = "RAM"; // Valid, as 'ageOrName' can hold a string
+// ageOrName = true; // Error, as 'ageOrName' can only hold a number or a string
+
+```
+
+Union types are beneficial in scenarios where a single variable can accept different types of values based on some condition or input. For instance, you can use union types in function parameters to accept different argument types:
+
+```
+function printID(id: number | string) {
+  console.log(`ID: ${id}`);
+}
+
+printID(42);       // Valid
+printID("ABC123"); // Valid
+// printID(true);  // Error, as 'id' should be a number or a string
+
+```
