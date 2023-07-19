@@ -121,3 +121,12 @@ let person: { name: string; age: number } = {
   age: 25,
 };
 ```
+
+
+
+# Primitive data types in Typescript ?
+TypeScript supports primitives, which are the basic types in JavaScript that make up data other than functions and objects.
+More you understand below images
+
+![alt text](./images/datatypes.jpg)
+
