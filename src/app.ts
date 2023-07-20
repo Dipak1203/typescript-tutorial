@@ -141,3 +141,34 @@
 
 // const myPoint: Point = { x: 10, y: 20 };
 // printCoordinates(myPoint); // Output: x: 10, y: 20
+
+
+
+
+
+// interface User {
+//     id: number;
+//     name: string;
+//     age: number;
+//     email: string;
+//   }
+//   const user1: User = {
+//     id: 1,
+//     name: "ram",
+//     age: 30,
+//     email: "ram@example.com",
+//   };
+  
+//   const user2: User = {
+//     id: 2,
+//     name: "Jane Smith",
+//     age: 25,
+//     email: "jane@example.com",
+//   };
+  
+//   // Error: Missing 'email' property
+//   const user3: User = {
+//     id: 3,
+//     name: "Bob ramson",
+//     age: 40,
+//   }
