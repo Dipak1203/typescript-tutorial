@@ -461,3 +461,31 @@ const user3: User = {
 };
 
 ```
+
+
+## Generic type in typescript 
+
+In TypeScript, the term "generic" refers to the ability to create functions, classes, and interfaces that work with a variety of data types while maintaining type safety. It allows you to write reusable code that can handle different data types without sacrificing the benefits of static type checking.
+
+
+To define a generic type or function, you use angle brackets (<>) and a type parameter inside the brackets. The type parameter acts as a placeholder for the actual type that will be passed to the function or class when it is used. You can use any letter or word as the type parameter; commonly, "T" is used to represent "Type."
+
+```
+
+function swap<T>(arr: T[], index1: number, index2: number): T[] {
+  [arr[index1], arr[index2]] = [arr[index2], arr[index1]];
+  return arr;
+}
+
+// Usage
+const numbers = [1, 2, 3, 4];
+const swappedNumbers = swap<number>(numbers, 1, 2);
+console.log(swappedNumbers); // Output: [1, 3, 2, 4]
+
+const strings = ['hello', 'world'];
+const swappedStrings = swap<string>(strings, 0, 1);
+console.log(swappedStrings); // Output: ['world', 'hello']
+
+```
+
+

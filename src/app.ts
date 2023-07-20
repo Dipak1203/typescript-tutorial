@@ -172,3 +172,19 @@
 //     name: "Bob ramson",
 //     age: 40,
 //   }
+
+
+
+// function swap<T>(arr: T[], index1: number, index2: number): T[] {
+//     [arr[index1], arr[index2]] = [arr[index2], arr[index1]];
+//     return arr;
+//   }
+  
+//   // Usage
+//   const numbers = [1, 2, 3, 4];
+//   const swappedNumbers = swap<number>(numbers, 1, 2);
+//   console.log(swappedNumbers); // Output: [1, 3, 2, 4]
+  
+//   const strings = ['hello', 'world'];
+//   const swappedStrings = swap<string>(strings, 0, 1);
+//   console.log(swappedStrings); // Output: ['world', 'hello']
